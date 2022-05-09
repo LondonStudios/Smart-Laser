@@ -5,11 +5,7 @@
 
 **Smart Laser** provides an advanced and realistic weapon laser sight which is fully synced and customisable. Each weapon can have different colours and laser ranges.
 
-**Efficiency:** We've optimised this as well as we can, this is the idle resource usage:
-
-![Efficiency](https://i.ibb.co/9cSpfVL/image.png)
-
-This rises when using the laser, but it's the best we can get given how well synced it is, with movement almost perfect for other players.
+View a video on installing the resource [here](https://youtu.be/fr_4JBU3mvk).
 
 **Requires OneSync**: Your server must be using OneSync.
 
