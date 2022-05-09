@@ -11,19 +11,16 @@
 -- Check out our PAID resources:
 -- https://store.londonstudios.net
 
-fx_version 'cerulean'
-games { 'gta5' }
+CreateThread(function()
+    for _, v in pairs(GetPlayers()) do
+        if Player(v).state.laserOn ~= nil and Player(v).state.laserOn then
+            Player(v).state.laserOn = false
+        end
+    end
+end)
 
-author 'London Studios'
-description 'An efficient and realistic laser sight resource'
-version '1.0.0'
-
-client_scripts {
-    'cl_smartlaser.lua'
-}
-
-server_scripts {
-    'sv_smartlaser.lua'
-}
-
-shared_script 'config.lua'
+RegisterNetEvent("LSLaser:Set", function(value)
+    local source = source
+    Player(source).state:set('direction', vector3(0.0, 0.0, 0.0), true)
+    Player(source).state.laserOn = value
+end)
