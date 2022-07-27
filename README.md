@@ -1,7 +1,7 @@
 ![Smart Taser](https://i.ibb.co/qR44zYj/Smart-Laser.png)
 
 ## Discord: https://discord.gg/5TD5ssEupv
-## View our Paid Resources: https://store.londonstudios.net
+## View our Paid Resources: https://store.londonstudios.net/github
 
 **Smart Laser** provides an advanced and realistic weapon laser sight which is fully synced and customisable. Each weapon can have different colours and laser ranges.
 
