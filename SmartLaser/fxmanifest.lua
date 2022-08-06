@@ -15,7 +15,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 lua54 'yes'
-use_fxv2_oal 'yes'
+use_experimental_fxv2_oal 'yes' -- The renamed OAL after build 5790
 
 author 'London Studios'
 description 'An efficient and realistic laser sight resource'
