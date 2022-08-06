@@ -12,9 +12,10 @@
 -- https://store.londonstudios.net
 
 config = {
+    retriveLocalStateFromServer = false, -- Whether to use the state the client has stored or to always fetch the state from the server
     laserColour = {255, 0, 0, 255}, -- RGBA Default
     sphereColour = {255, 0, 0, 255}, -- RGBA Default (only shows when laser is aimed on target)
-    offSet = {-0.1, 0.0, 0.025}, -- This is the default offSet if one isn't specified for a weapon
+    offSet = vec3(-0.1, 0.0, 0.025), -- This is the default offSet if one isn't specified for a weapon
     commandKeybind = 'E', -- This is the default keybind. Each user can change it in Settings -> Keybinds
     commandDesc = "Toggles the laser.", -- This is the keybind description
     commandName = 'laseron', -- This is the command behind the keybind used to toggle the laser
@@ -25,13 +26,13 @@ config = {
 config.supportedWeapons = {
     [`WEAPON_PISTOL`] = {
         -- If these values aren't set, the default value will be used
-        offSet = {0.0, 0.00, 0.025}, -- Laser offSet from gun
+        offSet = vec3(0.0, 0.00, 0.025), -- Laser offSet from gun
         laserColour = {255, 0, 0, 255}, -- RGBA
         sphereColour = {255, 0, 0, 255}, -- RGBA (only shows when laser is aimed on target)
         laserRange = 25.0, -- Laser Range
     },
     [`WEAPON_ASSAULTRIFLE`] = {
-        offSet = {0.5, 0.0, 0.05},
+        offSet = vec3(0.5, 0.0, 0.05),
         laserColour = {0, 255, 0, 255},
         sphereColour = {0, 255, 0, 255},
         laserRange = 50.0, -- Laser Range
